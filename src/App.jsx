@@ -5,7 +5,7 @@ function App() {
     async function predict() {
       try {
         const res = await fetch(
-          "https://machine-api-eq7w.onrender.com/predict",
+          "http://machine-api-eq7w.onrender.com/predict",
           {
             method: "POST",
 
