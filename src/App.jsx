@@ -26,7 +26,7 @@ function App() {
             }),
           }
         );
-        const data = await res.json();
+        const data = await res?.json();
         console.log(data);
       } catch (err) {
         console.log(err.message);
