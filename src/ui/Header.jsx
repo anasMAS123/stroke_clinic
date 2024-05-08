@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <div className=" h-16 bg-indigo-950 border-solid border-b-1 font-semibold text-lg p-4 text-stone-300 flex items-center ">
+    <div className=" h-16 bg-[#153448] border-solid border-b-1 font-semibold text-lg p-4 text-stone-300 flex items-center ">
       <Link to="/stroke_clinic/">
         <span className=" text-lg">🏥</span>
         <span> stroke clinic</span>
