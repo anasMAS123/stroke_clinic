@@ -4,6 +4,7 @@ import Error from "./ui/Error";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Test from "./pages/Test";
+import { action as testingData } from "./pages/Test";
 
 function App() {
   const router = createBrowserRouter([
@@ -24,6 +25,7 @@ function App() {
         {
           path: "/stroke_clinic/test",
           element: <Test />,
+          action: testingData,
         },
       ],
     },
