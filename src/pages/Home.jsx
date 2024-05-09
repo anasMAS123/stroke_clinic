@@ -9,7 +9,7 @@ function Home() {
         </span>
         clinic 🩺
       </div>
-      <div className="bg-[#153448] w-[300px] h-[550px] m-auto p-4 mt-6 sm:w-[800px] sm:h-[400px] ">
+      <div className="bg-[#153448] w-[300px] h-[500px] m-auto p-4 mt-6 sm:w-[800px] sm:h-[400px] rounded-md ">
         <div>
           <p className="text-white text-sm p-2 text-center">
             What is the <span className="">Stroke</span> ?
@@ -32,7 +32,7 @@ function Home() {
               <li>👴 Common for ages 60 and older</li>
             </ul>
 
-            <div className="mt-10 hidden sm:block ">
+            <div className="mt-10 hidden sm:block p-2 rounded-md bg-[#3C5B6F] ">
               <img
                 src="https://th.bing.com/th?id=OCII.68C9444253AC4FC854D443DDC1CF7318508DB5B7FDBFD46A0D36B2F1B37A7019&w=245&h=170&o=6&dpr=1.3&pid=HealthConditionsMainline"
                 alt=" not found "

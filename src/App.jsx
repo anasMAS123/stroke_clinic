@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Home from "./pages/Home";
 import Test from "./pages/Test";
 import { action as testingData } from "./pages/Test";
+import Result from "./pages/Result";
 
 function App() {
   const router = createBrowserRouter([
@@ -26,6 +27,10 @@ function App() {
           path: "/stroke_clinic/test",
           element: <Test />,
           action: testingData,
+        },
+        {
+          path: "/stroke_clinic/result",
+          element: <Result />,
         },
       ],
     },
