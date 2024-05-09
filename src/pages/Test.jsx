@@ -23,7 +23,7 @@ function Test() {
   const isLoading = useSelector((state) => state.predict.isLoading);
   return (
     <div className="bg-[#3C5B6F] text-center text-white ">
-      <p className="text-white p-4 text-xl mt-8 font-bold hidden sm:block">
+      <p className="text-white p-4 text-lg mt-2 font-bold hidden sm:block">
         Check if you are at risk of having a stroke
       </p>
       {isLoading ? (
@@ -40,7 +40,7 @@ function Test() {
         </div>
       ) : (
         <Form method="POST">
-          <div className=" max-w-[100%] w-[300px] h-[600px] bg-[#153448] rounded-md m-auto sm:w-[900px] p-2 sm:p-5 space-y-3 overflow-y-auto mt-8">
+          <div className="  w-[300px] h-[550px] bg-[#153448] rounded-md m-auto sm:w-[900px] p-2 sm:p-5 space-y-2 overflow-y-auto mt-2">
             <div className="flex flex-col sm:flex-row items-center gap-5">
               <label>Your full name : </label>
               <input
