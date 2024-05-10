@@ -12,6 +12,7 @@ function App() {
     {
       element: <AppLayout />,
       errorElement: <Error />,
+      path: "/stroke_clinic/",
 
       children: [
         {
