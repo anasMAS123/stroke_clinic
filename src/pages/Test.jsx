@@ -178,7 +178,7 @@ function Test() {
                 {lifeArea === "Urban" && "🏭"}
               </span>
             </div>
-            <div className="flex items-center gap-5">
+            {/* <div className="flex items-center gap-5">
               <span className="text-white">Smokign not found ?</span>
               <input
                 className=" cursor-pointer"
@@ -202,7 +202,7 @@ function Test() {
               <label htmlFor="no" className=" cursor-pointer">
                 NO
               </label>
-            </div>
+            </div> */}
 
             <div className="flex items-center gap-5">
               <label htmlFor="hyperTension" className=" cursor-pointer">
@@ -270,11 +270,11 @@ function Test() {
                 name="smoking_status"
                 value={smokingStatus}
               />
-              <input
+              {/* <input
                 type="hidden"
                 name="smoking_not_found"
                 value={smokingLife ? "True" : "False"}
-              />
+              /> */}
             </div>
 
             <button
@@ -295,6 +295,7 @@ export default Test;
 export async function action({ request }) {
   const formData = await request.formData();
   const data = Object.fromEntries(formData);
+  // console.log(data);
 
   const order = {
     name: data.name,
@@ -308,12 +309,12 @@ export async function action({ request }) {
     avg_glucose_level: Number(data.agl),
     bmi: Number(data.bmi),
     smoking_status: data.smoking_status,
-    smoking_not_found: data.smoking_not_found,
+    smoking_not_found: "False",
   };
-  console.log(order);
+  // console.log(order);
   const result = await predictor(order);
 
-  console.log(result);
+  // console.log(result);
   store.dispatch(
     findPredict({ prediction: result.prediction, name: order.name })
   );

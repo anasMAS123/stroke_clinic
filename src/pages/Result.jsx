@@ -6,7 +6,7 @@ function Result() {
   const isloading = useSelector((state) => state.predict.isLoading);
   const prediction = useSelector((state) => state.predict.prediction);
   const name = useSelector((state) => state.predict.name);
-  console.log(isloading, prediction);
+  // console.log(isloading, prediction);
   return (
     <div className="bg-[#3C5B6F] flex justify-center items-center flex-col gap-5">
       {isloading ? (
